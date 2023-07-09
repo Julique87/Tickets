@@ -40,7 +40,7 @@ class ManagerTest {
     }
 
     @Test
-    public void shouldSortTicketsBorder2() {                           // Сортировка билетов по запросу и цене, граничное значение
+    public void shouldSortTicketsBorder() {                           // Сортировка билетов по запросу и цене, граничное значение
         Ticket[] expected = {ticket4};
         Ticket[] actual = manager.findAll("FRU", "LED");
 
