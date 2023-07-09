@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d42be5a-b021-419e-a54c-e5d1dcecb187" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/RepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/TicketByPriceAscComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +18,31 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+                <branch-info repo="$PROJECT_DIR$" source="fast" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,18 +61,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Tickets/src/main/java",
-    "last_opened_file_path": "C:/Users/user/Desktop/Netology/hw/Tickets",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/user/Desktop/Netology/hw/Tickets/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Netology/hw/Tickets&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -65,8 +81,14 @@
       <recent name="ru.netology" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RepositoryTest.shouldNotFindById">
-    <configuration name="ManagerTest.shouldSortTickets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn verify" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ManagerTest.shouldSortTicketsWithComparator">
+    <configuration name="ManagerTest.shouldNotSortPriceTicketsWithComparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tickets" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +98,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.ManagerTest" />
-      <option name="METHOD_NAME" value="shouldSortTickets" />
+      <option name="METHOD_NAME" value="shouldNotSortPriceTicketsWithComparator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.shouldSortTicketsBorder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.shouldSortTicketsBorderWithComparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tickets" />
       <extension name="coverage">
         <pattern>
@@ -92,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.ManagerTest" />
-      <option name="METHOD_NAME" value="shouldSortTicketsBorder" />
+      <option name="METHOD_NAME" value="shouldSortTicketsBorderWithComparator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.shouldSortTicketsWithComparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tickets" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +129,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.RepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.ManagerTest" />
+      <option name="METHOD_NAME" value="shouldSortTicketsWithComparator" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,9 +172,9 @@
       <list>
         <item itemvalue="JUnit.RepositoryTest.shouldNotFindById" />
         <item itemvalue="JUnit.RepositoryTest.shouldFindById" />
-        <item itemvalue="JUnit.RepositoryTest" />
-        <item itemvalue="JUnit.ManagerTest.shouldSortTicketsBorder" />
-        <item itemvalue="JUnit.ManagerTest.shouldSortTickets" />
+        <item itemvalue="JUnit.ManagerTest.shouldSortTicketsWithComparator" />
+        <item itemvalue="JUnit.ManagerTest.shouldSortTicketsBorderWithComparator" />
+        <item itemvalue="JUnit.ManagerTest.shouldNotSortPriceTicketsWithComparator" />
       </list>
     </recent_temporary>
   </component>
